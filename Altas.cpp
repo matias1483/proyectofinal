@@ -109,12 +109,12 @@ Producto reg,pro;
     pro.setCodP(c);
     pro.buscar(arch);
     if(!arch.eof())
-            st1->SetLabel("Alta existente");
+            st6->SetLabel("Alta existente");
     else
         {
             arch.clear();
             reg.setCodP(c);
-            reg.setDescripcion(d.ToStdString());/*setDescripcion(n.ToStdString());*/
+            reg.setDescripcion(d.ToStdString());
             reg.setExistencia(ex);
             reg.setStockMax(sM);
             reg.setStockMin(sm);
