@@ -95,13 +95,13 @@ void principal::OnMenulistadoSelected(wxCommandEvent& event)
         msg = "Error de apertura de archivo";
         wxMessageBox(msg, _("ERROR DE APERTURA"));
     }
-    archt<<left<<setw(10)<<"CodProd"<<setw(20)<<"Descripcion"<<setw(10)<<"Existencia"<<setw(20)<<"Stock Max"<<setw(20)<<"Stock Min"<<setw(20)<<"Precio de Rep"<<endl;
+    archt<<left<<setw(10)<<"CodProd"<<setw(20)<<"Descripcion"<<setw(20)<<"Existencia"<<setw(20)<<"Stock Max"<<setw(20)<<"Stock Min"<<setw(20)<<"Precio de Rep"<<endl;
 
     arch.seekg(0);
     arch.read(reinterpret_cast<char *>(&reg),sizeof(Producto));
     while(!arch.eof())
     {
-        archt<<left<<setw(10)<<reg.getCodP()<<setw(20)<<reg.getDescripcion()<<setw(10)<<reg.getExistencia()<<setw(20)<<reg.getStockMax()<<setw(20)<<reg.getStockMin()<<setw(20)<<setprecision(2)<<fixed<<reg.getPrecioR()<<endl;
+        archt<<left<<setw(10)<<reg.getCodP()<<setw(20)<<reg.getDescripcion()<<setw(20)<<reg.getExistencia()<<setw(20)<<reg.getStockMax()<<setw(20)<<reg.getStockMin()<<setw(20)<<setprecision(2)<<fixed<<reg.getPrecioR()<<endl;
         arch.read(reinterpret_cast<char *>(&reg),sizeof(Producto));
     }
     archt.close();

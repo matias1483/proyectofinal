@@ -1804,7 +1804,7 @@
 	"wx/list.h"
 	"wx/dynarray.h"
 
-1637596679 source:d:\video clase\programacion visual\proyectofinal\proyectofinalmain.cpp
+1637606946 source:d:\video clase\programacion visual\proyectofinal\proyectofinalmain.cpp
 	"proyectofinalMain.h"
 	<wx/msgdlg.h>
 	"principal.h"
@@ -2058,7 +2058,7 @@
 
 1587560968 c:\wxwidgets\include\wx\os2\textctrl.h
 
-1637603474 source:d:\video clase\programacion visual\proyectofinal\principal.cpp
+1637606748 source:d:\video clase\programacion visual\proyectofinal\principal.cpp
 	"principal.h"
 	"Altas.h"
 	<wx/msgdlg.h>

@@ -74,7 +74,7 @@ proyectofinalFrame::proyectofinalFrame(wxWindow* parent,wxWindowID id)
     Button1->SetBackgroundColour(wxColour(0,0,255));
     wxFont Button1Font(11,wxFONTFAMILY_SWISS,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_BOLD,false,_T("Century Schoolbook"),wxFONTENCODING_DEFAULT);
     Button1->SetFont(Button1Font);
-    tc = new wxTextCtrl(this, ID_TEXTCTRL1, wxEmptyString, wxPoint(224,64), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
+    tc = new wxTextCtrl(this, ID_TEXTCTRL1, wxEmptyString, wxPoint(224,64), wxDefaultSize, wxTE_PASSWORD, wxDefaultValidator, _T("ID_TEXTCTRL1"));
     st = new wxStaticText(this, ID_STATICTEXT1, _("Ingrese la contrasena"), wxPoint(24,64), wxDefaultSize, 0, _T("ID_STATICTEXT1"));
     st->SetForegroundColour(wxColour(0,0,255));
     wxFont stFont(14,wxFONTFAMILY_SWISS,wxFONTSTYLE_ITALIC,wxFONTWEIGHT_BOLD,false,_T("@Adobe Gothic Std B"),wxFONTENCODING_DEFAULT);
